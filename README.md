@@ -5,7 +5,7 @@
 
 
 
-# bash-admin-scripts
+# Bash-admin-scripts
 
 ## Description
 
@@ -51,6 +51,7 @@ chmod +x backup.sh
   Le fichier est horodaté pour éviter les collisions
 
   Vérifie que la sauvegarde a réussi
+  
 
 2. Création d’utilisateurs
 
@@ -67,6 +68,7 @@ sudo ./create_users.sh
 
   Le mot de passe est expiré pour forcer le changement à la première connexion
 
+
 3. Vérification de l’espace disque
 ```bash
 chmod +x disk_check.sh
@@ -76,6 +78,7 @@ chmod +x disk_check.sh
   Vérifie l’utilisation de la partition / par défaut
 
   Affiche un message d’alerte si l’espace utilisé dépasse 80%
+
 
 4. Nettoyage des logs
 
