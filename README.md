@@ -43,4 +43,66 @@ Ces scripts sont conçus pour être facilement déployés sur des serveurs Linux
 
 ```bash
 chmod +x backup.sh
+./backup.sh### 1. Backup
+
+```bash
+
+chmod +x backup.sh
 ./backup.sh
+
+    Sauvegarde du dossier /home par défaut dans /backup
+
+    Le fichier est horodaté pour éviter les collisions
+
+    Vérifie que la sauvegarde a réussi
+
+2. Création d’utilisateurs
+
+    Remplir le fichier users.txt avec les noms des utilisateurs (1 par ligne)
+
+    Lancer le script :
+
+chmod +x create_users.sh
+sudo ./create_users.sh
+
+    Les utilisateurs sont créés avec un mot de passe temporaire (ChangeMe123)
+
+    Le mot de passe est expiré pour forcer le changement à la première connexion
+
+3. Vérification de l’espace disque
+
+chmod +x disk_check.sh
+./disk_check.sh
+
+    Vérifie l’utilisation de la partition / par défaut
+
+    Affiche un message d’alerte si l’espace utilisé dépasse 80%
+
+4. Nettoyage des logs
+
+chmod +x clean_logs.sh
+sudo ./clean_logs.sh
+
+    Supprime les fichiers .log de plus de 7 jours dans /var/log
+
+    Paramètre RETENTION_DAYS modifiable selon vos besoins
+
+Planification automatique (cron)
+
+Pour automatiser les tâches, par exemple :
+
+# Sauvegarde tous les jours à 2h du matin
+0 2 * * * /chemin/vers/backup.sh
+
+# Vérification disque tous les jours à 8h
+0 8 * * * /chemin/vers/disk_check.sh
+
+Bonnes pratiques
+
+    Toujours vérifier les permissions avant d’exécuter les scripts
+
+    Tester sur un environnement non critique avant de déployer en production
+
+    Personnaliser les variables en début de script (SOURCE_DIR, BACKUP_DIR, THRESHOLD, RETENTION_DAYS…)
+
+
