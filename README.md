@@ -1,6 +1,7 @@
-![Titre Nginx](Images/images.png)
+<p align="center">
+![Titre Bash](Images/images.png)
+</p>
 
-# Projet Nginx - Serveur Web
 
 
 # scripts-bash-administration
