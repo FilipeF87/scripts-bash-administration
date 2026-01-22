@@ -1,6 +1,7 @@
 <p align="center">
-![Titre Bash](Images/images.png)
+  <img src="Images/images.png" alt="Titre Bash" width="400">
 </p>
+
 
 
 
