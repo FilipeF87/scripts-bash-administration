@@ -46,11 +46,11 @@ chmod +x backup.sh
 ./backup.sh### 1. Backup
 ```
 
-    Sauvegarde du dossier /home par défaut dans /backup
+  Sauvegarde du dossier /home par défaut dans /backup
 
-    Le fichier est horodaté pour éviter les collisions
+  Le fichier est horodaté pour éviter les collisions
 
-    Vérifie que la sauvegarde a réussi
+  Vérifie que la sauvegarde a réussi
 
 2. Création d’utilisateurs
 
@@ -63,9 +63,9 @@ chmod +x create_users.sh
 sudo ./create_users.sh
 ```
 
-    Les utilisateurs sont créés avec un mot de passe temporaire (ChangeMe123)
+   Les utilisateurs sont créés avec un mot de passe temporaire (ChangeMe123)
 
-    Le mot de passe est expiré pour forcer le changement à la première connexion
+  Le mot de passe est expiré pour forcer le changement à la première connexion
 
 3. Vérification de l’espace disque
 ```bash
@@ -73,9 +73,9 @@ chmod +x disk_check.sh
 ./disk_check.sh
 ```
 
-    Vérifie l’utilisation de la partition / par défaut
+  Vérifie l’utilisation de la partition / par défaut
 
-    Affiche un message d’alerte si l’espace utilisé dépasse 80%
+  Affiche un message d’alerte si l’espace utilisé dépasse 80%
 
 4. Nettoyage des logs
 
@@ -83,9 +83,9 @@ chmod +x disk_check.sh
 chmod +x clean_logs.sh
 sudo ./clean_logs.sh
 ```
-    Supprime les fichiers .log de plus de 7 jours dans /var/log
+  upprime les fichiers .log de plus de 7 jours dans /var/log
 
-    Paramètre RETENTION_DAYS modifiable selon vos besoins
+  Paramètre RETENTION_DAYS modifiable selon vos besoins
 
 Planification automatique (cron)
 
@@ -99,10 +99,10 @@ Pour automatiser les tâches, par exemple :
 
 Bonnes pratiques
 
-    Toujours vérifier les permissions avant d’exécuter les scripts
+  Toujours vérifier les permissions avant d’exécuter les scripts
 
-    Tester sur un environnement non critique avant de déployer en production
+  Tester sur un environnement non critique avant de déployer en production
 
-    Personnaliser les variables en début de script (SOURCE_DIR, BACKUP_DIR, THRESHOLD, RETENTION_DAYS…)
+  Personnaliser les variables en début de script (SOURCE_DIR, BACKUP_DIR, THRESHOLD, RETENTION_DAYS…)
 
 
