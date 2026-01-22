@@ -44,11 +44,7 @@ Ces scripts sont conçus pour être facilement déployés sur des serveurs Linux
 ```bash
 chmod +x backup.sh
 ./backup.sh### 1. Backup
-
-```bash
-
-chmod +x backup.sh
-./backup.sh
+```
 
     Sauvegarde du dossier /home par défaut dans /backup
 
