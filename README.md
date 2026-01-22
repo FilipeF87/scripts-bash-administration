@@ -58,17 +58,20 @@ chmod +x backup.sh
 
     Lancer le script :
 
+```bash
 chmod +x create_users.sh
 sudo ./create_users.sh
+```
 
     Les utilisateurs sont créés avec un mot de passe temporaire (ChangeMe123)
 
     Le mot de passe est expiré pour forcer le changement à la première connexion
 
 3. Vérification de l’espace disque
-
+```bash
 chmod +x disk_check.sh
 ./disk_check.sh
+```
 
     Vérifie l’utilisation de la partition / par défaut
 
@@ -76,9 +79,10 @@ chmod +x disk_check.sh
 
 4. Nettoyage des logs
 
+```bash
 chmod +x clean_logs.sh
 sudo ./clean_logs.sh
-
+```
     Supprime les fichiers .log de plus de 7 jours dans /var/log
 
     Paramètre RETENTION_DAYS modifiable selon vos besoins
