@@ -1,16 +1,3 @@
-Structure des sauvegardes
-
-Les sauvegardes sont stockées dans le répertoire :
-
-/backup/users/
-
-Format du fichier généré :
-
-users_YYYYMMDD_HHMMSS.tar.gz
-
-Exemple :
-
-users_20260127_143015.tar.gz
 <p align="center">
   <img src="Images/images.png" alt="Titre Bash" width="400">
 </p>
