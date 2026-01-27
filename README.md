@@ -1,3 +1,16 @@
+Structure des sauvegardes
+
+Les sauvegardes sont stockées dans le répertoire :
+
+/backup/users/
+
+Format du fichier généré :
+
+users_YYYYMMDD_HHMMSS.tar.gz
+
+Exemple :
+
+users_20260127_143015.tar.gz
 <p align="center">
   <img src="Images/images.png" alt="Titre Bash" width="400">
 </p>
@@ -99,6 +112,43 @@ Pour automatiser les tâches, par exemple :
 
 # Vérification disque tous les jours à 8h
 0 8 * * * /chemin/vers/disk_check.sh
+
+5. Sauveguarde des répertoires utilisateurs
+
+Utilisation
+crée un dossier de sauvegarde s’il n’existe pas
+
+Génère une archive compressée de /home
+
+Ajoute la date et l’heure au nom du fichier
+
+Arrête le script automatiquement en cas d’erreur
+
+Rendre le script exécutable :
+
+```bash
+chmod +x backup_users.sh
+```
+
+Lancer la sauvegarde :
+```bash
+./backup_users.sh
+```
+Structure des sauvegardes
+
+Les sauvegardes sont stockées dans le répertoire :
+
+/backup/users/
+
+
+Format du fichier généré :
+
+users_YYYYMMDD_HHMMSS.tar.gz
+
+
+Exemple :
+
+users_20260127_143015.tar.gz
 
 Bonnes pratiques
 
