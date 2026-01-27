@@ -100,7 +100,7 @@ Pour automatiser les tâches, par exemple :
 # Vérification disque tous les jours à 8h
 0 8 * * * /chemin/vers/disk_check.sh
 
-5. Sauveguarde des répertoires utilisateurs
+5. ## Sauveguarde des répertoires utilisateurs
 
 Utilisation
 crée un dossier de sauvegarde s’il n’existe pas
