@@ -25,7 +25,7 @@ Ces scripts sont conçus pour être facilement déployés sur des serveurs Linux
 | `disk_check.sh` | Vérification de l’espace disque avec alerte si le seuil est dépassé |
 | `clean_logs.sh` | Nettoyage des fichiers `.log` anciens pour libérer de l’espace disque |
 | `users.txt` | Exemple de fichier contenant la liste des utilisateurs à créer |
-
+|  `backup_users.sh` | Sauveguarde des utilisateurs `|
 ---
 
 ## Prérequis
