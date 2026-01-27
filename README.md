@@ -100,7 +100,9 @@ Pour automatiser les tâches, par exemple :
 # Vérification disque tous les jours à 8h
 0 8 * * * /chemin/vers/disk_check.sh
 
-5. ## Sauveguarde des répertoires utilisateurs
+
+
+5. Sauveguarde des répertoires utilisateurs
 
 Utilisation
 crée un dossier de sauvegarde s’il n’existe pas
@@ -137,6 +139,60 @@ Exemple :
 
 users_20260127_143015.tar.gz
 
+Structure des sauvegardes
+
+Les sauvegardes sont stockées dans le répertoire :
+
+/backup/users/
+
+Format du fichier généré :
+
+users_YYYYMMDD_HHMMSS.tar.gz
+
+Exemple :
+
+users_20260127_143015.tar.gz
+Structure des sauvegardes
+
+Les sauvegardes sont stockées dans le répertoire :
+
+/backup/users/
+
+Format du fichier généré :
+
+users_YYYYMMDD_HHMMSS.tar.gz
+
+Exemple :
+
+users_20260127_143015.tar.gz
+Structure des sauvegardes
+
+Les sauvegardes sont stockées dans le répertoire :
+
+/backup/users/
+
+Format du fichier généré :
+
+users_YYYYMMDD_HHMMSS.tar.gz
+
+Exemple :
+
+users_20260127_143015.tar.gz
+Structure des sauvegardes
+
+Les sauvegardes sont stockées dans le répertoire :
+
+/backup/users/
+
+Format du fichier généré :
+
+users_YYYYMMDD_HHMMSS.tar.gz
+
+Exemple :
+
+users_20260127_143015.tar.gz
+
+---
 Bonnes pratiques
 
   Toujours vérifier les permissions avant d’exécuter les scripts
@@ -144,5 +200,5 @@ Bonnes pratiques
   Tester sur un environnement non critique avant de déployer en production
 
   Personnaliser les variables en début de script (SOURCE_DIR, BACKUP_DIR, THRESHOLD, RETENTION_DAYS…)
-
+---
 
