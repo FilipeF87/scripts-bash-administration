@@ -53,7 +53,7 @@ chmod +x backup.sh
   Vérifie que la sauvegarde a réussi
   
 
-2. Création d’utilisateurs
+# 2. Création d’utilisateurs
 
     Remplir le fichier users.txt avec les noms des utilisateurs (1 par ligne)
 
@@ -69,7 +69,7 @@ sudo ./create_users.sh
   Le mot de passe est expiré pour forcer le changement à la première connexion
 
 
-3. Vérification de l’espace disque
+# 3. Vérification de l’espace disque
 ```bash
 chmod +x disk_check.sh
 ./disk_check.sh
@@ -80,7 +80,7 @@ chmod +x disk_check.sh
   Affiche un message d’alerte si l’espace utilisé dépasse 80%
 
 
-4. Nettoyage des logs
+# 4. Nettoyage des logs
 
 ```bash
 chmod +x clean_logs.sh
@@ -94,15 +94,15 @@ Planification automatique (cron)
 
 Pour automatiser les tâches, par exemple :
 
-# Sauvegarde tous les jours à 2h du matin
+Sauvegarde tous les jours à 2h du matin
 0 2 * * * /chemin/vers/backup.sh
 
-# Vérification disque tous les jours à 8h
+Vérification disque tous les jours à 8h
 0 8 * * * /chemin/vers/disk_check.sh
 
 
 
-5. Sauveguarde des répertoires utilisateurs
+# 5. Sauveguarde des répertoires utilisateurs
 
 Utilisation
 crée un dossier de sauvegarde s’il n’existe pas
@@ -134,59 +134,6 @@ Format du fichier généré :
 
 users_YYYYMMDD_HHMMSS.tar.gz
 
-
-Exemple :
-
-users_20260127_143015.tar.gz
-
-Structure des sauvegardes
-
-Les sauvegardes sont stockées dans le répertoire :
-
-/backup/users/
-
-Format du fichier généré :
-
-users_YYYYMMDD_HHMMSS.tar.gz
-
-Exemple :
-
-users_20260127_143015.tar.gz
-Structure des sauvegardes
-
-Les sauvegardes sont stockées dans le répertoire :
-
-/backup/users/
-
-Format du fichier généré :
-
-users_YYYYMMDD_HHMMSS.tar.gz
-
-Exemple :
-
-users_20260127_143015.tar.gz
-Structure des sauvegardes
-
-Les sauvegardes sont stockées dans le répertoire :
-
-/backup/users/
-
-Format du fichier généré :
-
-users_YYYYMMDD_HHMMSS.tar.gz
-
-Exemple :
-
-users_20260127_143015.tar.gz
-Structure des sauvegardes
-
-Les sauvegardes sont stockées dans le répertoire :
-
-/backup/users/
-
-Format du fichier généré :
-
-users_YYYYMMDD_HHMMSS.tar.gz
 
 Exemple :
 
